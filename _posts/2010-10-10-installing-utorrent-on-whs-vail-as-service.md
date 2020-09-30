@@ -80,6 +80,7 @@ NOTE: Please note that there is a space after equal sign.
 If all goes well then you will get [SC] CreateService SUCCESS feedback in command prompt.
 
 Now we need to create a .Reg file using notepad and paste in the 3 lines of code below.
+
 ```
 Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\uTorrent\Parameters]
