@@ -12,7 +12,7 @@ If you are looking for more details to know me better, here are the links to g
 
 - Resume
     - [HTML](/resume){:target="_blank"} (Preferred for on screen viewing)
-    - [PDF](/assets/docs/resume.pdf){:target="_blank"} (Preferred for printing/emailing)
+    - [PDF](/docs/resume.pdf){:target="_blank"} (Preferred for printing/emailing)
 - [LinkedIn Profile](https://www.linkedin.com/in/pjsoni)
 - [GitHub Profile](https://github.com/pjsoni)
 
