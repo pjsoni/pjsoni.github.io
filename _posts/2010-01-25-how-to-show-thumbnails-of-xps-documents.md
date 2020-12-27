@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to show thumbnails of XPS documents.
+markdown: kramdown
 #subtitle: Each post also has a subtitle
 #gh-repo: daattali/beautiful-jekyll
 #gh-badge: [star, fork, follow]
@@ -145,7 +146,7 @@ converter.XpsFileName = “XPSdocument.xps”;
 converter.OutputFormat = OutputFormat.Png;
 converter.OutputQuality = OutputQuality.Super;
 converter.GenerateThumbnail();
-``` 
+```
 
 ### Conclusion
 

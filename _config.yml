@@ -188,7 +188,7 @@ date_format: "%B %-d, %Y"
 timezone: "America/Chicago"
 markdown: kramdown
 highlighter: rouge
-permalink: /:categories/:title:output_ext
+permalink: none
 paginate: 5
 
 kramdown:
@@ -227,4 +227,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
