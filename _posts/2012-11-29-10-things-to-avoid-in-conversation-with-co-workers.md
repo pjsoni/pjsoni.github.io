@@ -7,7 +7,6 @@ title: 10 things to avoid in conversation with co-workers
 category: [blog]
 #tags: [test]
 comments: false
-permalink: 10-things-to-avoid-in-conversation-with-co-workers.html
 ---
 
 Here are 10 things you should never say at work.
