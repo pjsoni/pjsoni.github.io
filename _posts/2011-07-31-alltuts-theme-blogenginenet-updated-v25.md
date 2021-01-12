@@ -1,7 +1,6 @@
 ---
 layout: post
 title: AllTuts theme for BlogEngine.net, updated for BE v2.5
-tags: [BLOGENGINE.NET, THEME]
 category: [blog]
 comments: false
 ---
