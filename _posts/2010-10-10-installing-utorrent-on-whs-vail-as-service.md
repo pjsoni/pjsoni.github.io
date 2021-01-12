@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Installing uTorrent on WHS “Vail” as Service
-#subtitle: Each post also has a subtitle
-#gh-repo: daattali/beautiful-jekyll
-#gh-badge: [star, fork, follow]
-category: [blog]
 tags: [UTORRENT, VAIL, WHS, WINDOWS HOME SERVER]
+category: [blog]
 comments: false
 #OCTOBER 10, 2010 BY PRAVESH SONI
 ---
@@ -18,25 +15,25 @@ First of all, we need to create an user account for uTorrent service account usi
 
 WHS Vail - Dashboard
 WHS Vail – Dashboard
- 
+
 
 Open server dashboard and navigate to Users tab. Invoke Add a User Account wizard by clicking Add a user account link in Users Tasks pane.
 
 WHS Vail - Create user wizard 1
 WHS Vail – Create user wizard 1
- 
+
 
 Once the wizard opens, fill the appropriate information in the first step and proceed to next by clicking on Next button.
 
 WHS Vail - Create user wizard 2
 WHS Vail – Create user wizard 2
- 
+
 
 In second step, don’t assign any permissions to any shared folder to the user account.
 
 WHS Vail - Create user wizard 3
 WHS Vail – Create user wizard 3
- 
+
 
 Also do not allow remote access and finish the wizard by clicking Create account button.
 
@@ -46,19 +43,19 @@ in next step, we need to create a shared folder for uTorrent download data. To d
 
 WHS Vail - Create shared folder wizard 1
 WHS Vail – Create shared folder wizard 1
- 
+
 
 In first step of wizard, give share name and description and proceed to next step by clicking Next button.
 
 WHS Vail - Create shared folder wizard 2
 WHS Vail – Create shared folder wizard 2
- 
+
 
 In second step, click on Specific people to assign permissions to our uTorrent service account.
 
 WHS Vail - Create shared folder wizard 3
 WHS Vail – Create shared folder wizard 3
- 
+
 
 Assign permission as per above screen shot and finish the wizard by clicking Add folder button to complete the folder creation process.
 
@@ -97,7 +94,7 @@ Select the Log On tab. Click the This account button and enter WHS as the This a
 
 uTorrent - Service account properties
 uTorrent – Service account properties
- 
+
 
 OK out and close the Services dialog.
 

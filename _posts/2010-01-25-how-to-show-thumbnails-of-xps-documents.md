@@ -1,15 +1,10 @@
 ---
 layout: post
 title: How to show thumbnails of XPS documents.
-markdown: kramdown
-#subtitle: Each post also has a subtitle
-#gh-repo: daattali/beautiful-jekyll
-#gh-badge: [star, fork, follow]
-category: [blog]
 tags: [C#, CODING, XPS]
+category: [blog]
 comments: false
 #JANUARY 25, 2010 BY PRAVESH SONI
-date: 2010-01-25
 ---
 
 Recently I came across the requirement for displaying thumbnails of XPS document in SharePoint document library. As a hardcore developer, I’m not in favor of readymade third -party components unless and until you really need them. Hence, I’ve decided to create an image generator myself. I explored the native .net methods for reading the XPS documents. After exploring, I found that in .net framework 3.0, there is a managed dll called ReachFramework.dll is having all the necessary classes and methods for reading and writing of XPS document.

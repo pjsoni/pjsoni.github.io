@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Blamer can not become Leader
-#subtitle: Each post also has a subtitle
-#gh-repo: daattali/beautiful-jekyll
-#gh-badge: [star, fork, follow]
-category: [blog]
 tags: [LEADERSHIP, TEAM BUILDING]
+category: [blog]
 comments: false
 #MARCH 7, 2011 BY PRAVESH SONI
 ---

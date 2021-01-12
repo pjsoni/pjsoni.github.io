@@ -1,13 +1,9 @@
 ---
 layout: post
 title: AllTuts theme for BlogEngine.net, updated for BE v2.5
-#subtitle: Each post also has a subtitle
-#gh-repo: daattali/beautiful-jekyll
-#gh-badge: [star, fork, follow]
-category: [blog]
 tags: [BLOGENGINE.NET, THEME]
+category: [blog]
 comments: false
-#JULY 31, 2011 BY PRAVESH SONI
 ---
 
 

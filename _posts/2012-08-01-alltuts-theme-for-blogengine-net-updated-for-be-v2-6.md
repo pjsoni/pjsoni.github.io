@@ -1,12 +1,8 @@
 ---
 layout: post
 title: AllTuts theme for BlogEngine.net, updated for BE v2.6
-#subtitle: Excerpt from Soulshaping by Jeff Brown
-#cover-img: /assets/img/path.jpg
-#thumbnail-img: /assets/img/thumb.png
-#share-img: /assets/img/path.jpg
 category: [blog]
-#tags: [books, test]
+comments: false
 ---
 
 Previously I’ve published BlogEngine theme AllTuts based on original wordpress theme. This theme is now updated for BlogEngine v2.6

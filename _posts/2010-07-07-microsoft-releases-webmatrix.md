@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Microsoft Releases WebMatrix
-#subtitle: Each post also has a subtitle
-#gh-repo: daattali/beautiful-jekyll
-#gh-badge: [star, fork, follow]
-category: [blog]
 tags: [.NET, ASP.NET, TOOLS, WEBMATRIX]
+category: [blog]
 comments: false
 #JULY 7, 2010 BY PRAVESH SONI
 ---

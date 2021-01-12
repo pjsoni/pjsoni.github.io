@@ -1,11 +1,8 @@
 ---
 layout: post
 title: New theme for Blogengine.net - “AllTuts”
-#subtitle: Each post also has a subtitle
-#gh-repo: daattali/beautiful-jekyll
-#gh-badge: [star, fork, follow]
-category: [blog]
 tags: [BLOGENGINE.NET, THEME]
+category: [blog]
 comments: false
 #DECEMBER 13, 2010 BY PRAVESH SONI
 ---
@@ -25,7 +22,7 @@ Blogengine.net Theme AllTuts
 
 Download: AllTuts (Updated CSS – 2011/01/07)
 
- 
+
 
 Version History:
 

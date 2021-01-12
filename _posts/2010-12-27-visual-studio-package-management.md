@@ -1,11 +1,8 @@
 ---
 layout: post
 title: Visual Studio and Package Management
-#subtitle: Each post also has a subtitle
-#gh-repo: daattali/beautiful-jekyll
-#gh-badge: [star, fork, follow]
-category: [blog]
 tags: [C#, CODING, NUGET, TOOLS]
+category: [blog]
 comments: false
 #DECEMBER 27, 2010 BY PRAVESH SONI
 ---
@@ -27,4 +24,3 @@ Let’s take ELMAH as an example. It’s a fine error logging utility which has 
 NuGet automates all these common and tedious tasks for a package as well as its dependencies. It removes nearly all of the challenges of incorporating a third party open source library into a project’s source tree. This will help developers to reduce such exercise for downloading, installing and configuring the third party software in to the application.
 
 In upcoming posts, I’ll show how to utilize NuGet to manage open source packages in to project.
-
