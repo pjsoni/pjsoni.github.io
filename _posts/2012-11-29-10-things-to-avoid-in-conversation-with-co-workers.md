@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: single
 title: 10 things to avoid in conversation with co-workers
+tags: [leadership]
 category: [blog]
 comments: false
-permalink:  /blog/10-things-to-avoid-in-conversation-with-co-workers.html
 ---
 
 Here are 10 things you should never say at work.

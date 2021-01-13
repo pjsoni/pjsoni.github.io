@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: single
 title: Blamer can not become Leader
-tags: [LEADERSHIP, TEAM BUILDING]
+tags: [leadership, team building]
 category: [blog]
 comments: false
 #MARCH 7, 2011 BY PRAVESH SONI
+
 ---
 
 Tanmay Vora has just posted on Leadership. I liked most are three points which is mostly necessary for a leader.
@@ -15,4 +16,4 @@ Leaders need to watch and choose their words. Every conversation with others is 
 
 Leadership is about using “we” language more than “I versus them”, and that kind of leadership owns the failures as much as they own their successes. It is about celebrating the contributions from each team member when team succeeds, and take collective ownership of failures, learn from them and improve. It is also about knowing when to step up and take the lead, versus when to step down and let people perform.
 
-More you can find here.
+More you can find [here](http://qaspire.com/2011/03/07/leaders-cannot-be-blamers-3-things/).

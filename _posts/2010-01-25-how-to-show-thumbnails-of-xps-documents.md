@@ -1,18 +1,17 @@
 ---
-layout: post
+layout: single
 title: How to show thumbnails of XPS documents.
-tags: [C#, CODING, XPS]
+tags: [c#, coding, xps]
 category: [blog]
 comments: false
 #JANUARY 25, 2010 BY PRAVESH SONI
+
 ---
 
-Recently I came across the requirement for displaying thumbnails of XPS document in SharePoint document library. As a hardcore developer, I’m not in favor of readymade third -party components unless and until you really need them. Hence, I’ve decided to create an image generator myself. I explored the native .net methods for reading the XPS documents. After exploring, I found that in .net framework 3.0, there is a managed dll called ReachFramework.dll is having all the necessary classes and methods for reading and writing of XPS document.
+Recently I came across the requirement for displaying thumbnails of XPS document in SharePoint document library. As a hardcore developer, I’m not in favor of readymade third -party components unless and until you really need them. Hence, I’ve decided to create an image generator myself. I explored the native .net methods for reading the XPS documents. After exploring I found that in .net framework 3.0, there is a managed dll called ReachFramework.dll is having all the necessary classes and methods for reading and writing of XPS document.
 
 ### Classes
-
-Class diagram - XPS document thumbnail generation
-Class diagram
+![Class diagram - XPS document thumbnail generation](/siteassets/images/ClassDiagram.jpg "Class diagram - XPS document thumbnail generation")
 
 ### XpsThumbnail class
 
@@ -145,6 +144,6 @@ converter.GenerateThumbnail();
 
 ### Conclusion
 
-The sample application provided with this article just demonstrated the utilization of the code. In the demo application, you need to save the image by invoking context menu from the thumbnail to see the output as I’m using the in memory image stream to display image in to picture box.
+The sample application provided with this article just demonstrated the utilization of the code. In the demo application you need to save the image by invoking context menu from the thumbnail to see the output as I’m using the in memory image stream to display image in to picture box.
 
 And please don’t hesitate to provide feedback, good or bad! I hope you enjoyed this article.
