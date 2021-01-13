@@ -10,7 +10,7 @@ comments: false
 
 Today Microsoft released beta version of free tool for developing web application called “WebMatrix”. This tool intended for all developers from beginners to experienced. WebMatrix can be downloaded from WebMatrix download page.
 
-![Microsoft WebMatrix](/siteassets/images/webmatrix.png)
+![Microsoft WebMatrix](/assets/images/webmatrix.png)
 
 WebMatrix is small downloadable package of 15MB only. It contains core WebMatrix editor, IIS Express, SQL Compact Edition and support for ASP.NET MVC. WebMatrix can be installed side-by-side with other editions of Visual Studio 2010 including Express editions.
 

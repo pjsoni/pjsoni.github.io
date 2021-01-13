@@ -277,7 +277,7 @@ defaults:
     values:
       layout: single
       header:
-        overlay_image: /siteassets/images/chicago.jpg
+        overlay_image: /assets/images/chicago.jpg
   # _posts
   - scope:
       path: ""

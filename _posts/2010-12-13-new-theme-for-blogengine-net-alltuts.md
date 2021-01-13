@@ -11,7 +11,7 @@ comments: false
 Finally I’ve managed to finish porting WordPress theme called AllTuts on BlogEngine.NET. AllTuts theme is originally developed by Site5. This theme is playing so nice that I’ve decided to port that theme for my blog based on BlogEngine.NET.
 
 
-![Blogengine.net Theme AllTuts](/siteassets/images/AllTutsFrontPage.png "Blogengine.net Theme AllTuts")
+![Blogengine.net Theme AllTuts](/assets/images/AllTutsFrontPage.png "Blogengine.net Theme AllTuts")
 
 ## Theme Highlights
 
