@@ -70,7 +70,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -280,15 +280,15 @@ defaults:
         overlay_image: /assets/images/chicago.jpg
   # _posts
   - scope:
-      path: ""
+      path: "/blog/"
       type: posts
     values:
       layout: single
-      author_profile: false
-      read_time: false
-      comments: false
-      share: false
-      related: false
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
       paginate: true
   - scope:
       path: ""
