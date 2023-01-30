@@ -32,7 +32,8 @@ permalink: /resume.html
 
 ## Professional Experience
 #### Bank of America, Chicago -- IL
-##### Consultant -- Senior DevOps Engineer, January 2021 -- Present
+##### Vice President -- DevOps Lead Engineer, September 2021 -- Present
+##### Consultant -- Senior DevOps Engineer, January 2021 -- August 2021
 
 
 #### CDK Global, Hoffman Estates -- IL

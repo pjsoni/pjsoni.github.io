@@ -3,7 +3,7 @@ title: About me
 permalink: /about.html
 #subtitle: Why you'd want to go on a date with me
 header:
-  overlay_image: /assets/images/chicago.jpg
+  overlay_image: /assets/images/Chicago.jpg
 ---
 
 ![Pravesh Soni](/assets/images/pravesh.png){:width="180px" style="float:left; margin-right: 1.5em;"} My name is Pravesh Soni and I’m software professional. I got involved with computers since last two decades starting with playing games developed in BASIC. I am a tech enthusiast and I love writing code, blogging, science fiction, cartoons, music, robotics, IoT, home automation and I am a big Microsoft fan too.
