@@ -1,6 +1,6 @@
 ---
 title: Blog
-layout: home
+layout: archive
 comments: false
 permalink: /blog/
 entries_layout: list
