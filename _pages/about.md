@@ -1,21 +1,33 @@
 ---
 title: About me
 permalink: /about.html
-#subtitle: Why you'd want to go on a date with me
 header:
   overlay_image: /assets/images/Chicago.jpg
 ---
 
-![Pravesh Soni](/assets/images/pravesh.png){:width="180px" style="float:left; margin-right: 1.5em;"} My name is Pravesh Soni and I’m software professional. I got involved with computers since last two decades starting with playing games developed in BASIC. I am a tech enthusiast and I love writing code, blogging, science fiction, cartoons, music, robotics, IoT, home automation and I am a big Microsoft fan too.
+![Pravesh Soni](/assets/images/pravesh.png){:width="180px" style="float:left; margin-right: 1.5em;"}
 
-I started programming in classic asp and later switch to .net and now at present I have over two decades of application development experience in Microsoft technologies. I got involved in customized software development in my career of programming, now contributing to some open source community development.
+## My Journey into Technology
 
-If you are looking for more details to know me better, here are the links to get more details about me.
+I grew up fascinated by computers specifically those used for early games. My first interaction with the computer when I got chance to play games on Spectravideo SVI-728 at my friend's house. That started my exploration in the early days of personal computing. My first brush with programming came through BASIC—writing simple games and scripts that sparked an enduring passion for building software. What began as childhood curiosity evolved into a 20+ year career in software development.
 
-- Resume
-    - [HTML](/resume.html){:target="_blank"} (Preferred for on screen viewing)
-    - [PDF](/assets/docs/resume.pdf){:target="_blank"} (Preferred for printing/emailing)
-- [LinkedIn Profile](https://www.linkedin.com/in/pjsoni)
-- [GitHub Profile](https://github.com/pjsoni)
+My early years in the industry introduced me to **Classic ASP**, where I learned web development fundamentals. This foundation led me to **Microsoft technologies**, particularly **.NET and C#**, which became my primary focus. Over the decades, I've deepened my expertise in application architecture, performance optimization, and DevOps practices, working across the full technology stack—from database design to cloud infrastructure.
 
-**Note:** _A recently updated resume does not indicate looking for a new job. A resume is also used for applying for memberships in committees, participation in panels, speaking engagements and further education. It is good practice to review your career growth every couple of months and update your resume. This way, you don’t have dig to find the information when you need to send an update resume._
+## What Drives Me
+
+I'm energized by solving complex technical problems, whether it's architecting scalable systems, tuning database queries for optimal performance, or designing CI/CD pipelines that enable teams to ship faster. I'm equally passionate about **writing and sharing knowledge**—through blogging, contributing to open source communities, and exploring emerging technologies like IoT and home automation.
+
+Beyond code, I'm a fan of science fiction, music, and creative pursuits. I'm an enthusiast of the Microsoft ecosystem and genuinely excited about how technology continues to evolve and shape our world.
+
+## Connect With Me
+
+For detailed information about my professional background and skills:
+
+- **Resume**: [View Online](/resume.html) | [Download PDF](/assets/docs/resume.pdf)
+- **LinkedIn**: [linkedin.com/in/pjsoni](https://www.linkedin.com/in/pjsoni)
+- **GitHub**: [github.com/pjsoni](https://github.com/pjsoni)
+- **Blog**: [Read my latest posts](/blog/)
+
+---
+
+*A regularly updated resume reflects my commitment to professional growth and continuous learning—not necessarily a job search. I maintain an up-to-date resume for various opportunities including committee memberships, speaking engagements, panel participation, and further education. It's good practice to review your career development regularly and keep your resume current.*
