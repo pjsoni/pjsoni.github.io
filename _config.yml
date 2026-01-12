@@ -85,4 +85,4 @@ defaults:
       share: true
       related: true
       paginate: true
-      permalink: /blog/:title/
+      permalink: /blog/:title.html
