@@ -13,6 +13,7 @@
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
+repository: pjsoni/pjsoni.github.io
 
 # Site Settings
 locale                   : "en-US"
@@ -22,7 +23,7 @@ title_separator          : "-"
 subtitle                 : "My journey in to unknown of IT" # site tagline that appears below site title in masthead
 name                     : "Pravesh Soni"
 description              : "@pjsoni's Home - Documentation and More"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://pravesh.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
