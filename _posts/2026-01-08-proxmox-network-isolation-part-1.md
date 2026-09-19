@@ -1,8 +1,11 @@
 ---
-layout: post
+layout: single
+slug: proxmox-network-isolation-part-1
+is_series: true
+series_title: "Proxmox Network Isolation Series"
 title: "Proxmox Network Isolation Series – Part 1: Securing a Single-Node Hypervisor"
 date: 2026-01-08
-categories: [homelab, proxmox, security, networking]
+category: [blog]
 tags: [Proxmox, VLAN, Homelab, Virtualization, Security, Firewall]
 ---
 

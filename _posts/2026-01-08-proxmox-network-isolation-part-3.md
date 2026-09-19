@@ -1,11 +1,12 @@
 ---
-
-layout: post
+layout: single
+is_series: true
+series_title: "Proxmox Network Isolation Series"
 title: "Proxmox Network Isolation Series – Part 3: Migrating an Existing Cluster with Running VMs"
 date: 2026-01-08
-categories: [homelab, proxmox, security, networking]
+category: [blog]
 tags: [Proxmox, VLAN, Migration, Cluster, Corosync, Firewall, Security]
------------------------------------------------------------------------
+---
 
 ## Introduction
 

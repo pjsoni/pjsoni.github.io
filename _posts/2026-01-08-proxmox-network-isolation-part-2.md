@@ -1,11 +1,12 @@
 ---
-
-layout: post
+layout: single
+is_series: true
+series_title: "Proxmox Network Isolation Series"
 title: "Proxmox Network Isolation Series – Part 2: Fresh Three-Node Cluster"
 date: 2026-01-08
-categories: [homelab, proxmox, security, networking]
+category: [blog]
 tags: [Proxmox, VLAN, Cluster, Corosync, Firewall]
---------------------------------------------------
+---
 
 ## Scope and Assumptions
 

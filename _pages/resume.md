@@ -2,7 +2,6 @@
 layout: null
 title: Resume
 permalink: /resume.html
-#subtitle: Why you'd want to go on a date with me
 ---
 # Pravesh Soni
 ### Software Architect, DevOps Engineer
@@ -12,7 +11,8 @@ permalink: /resume.html
     Development backed by DevOps.
 -   Skilled at design techniques and applying those techniques with
     **.NET (C#, CVB.NET)**, **JSON**, **XML**
--   Current Development with **C#**, **VB.NET**, **ASP.NET**, **.NET** and  **.NET Core**
+-   Current Development with **C#**, **VB.NET**, **ASP.NET**, **.NET** and
+    **.NET Core**
 -   Proficiency in building web-based applications using **AngularJS**,
     **Angular 8**, various CSS frameworks such as **Twitter Bootstrap**,
     **Google Material Design** in conjunction with **.NET Core WebAPI**.

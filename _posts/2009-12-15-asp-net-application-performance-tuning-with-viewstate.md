@@ -4,7 +4,6 @@ title: ASP.net application performance tuning with ViewState
 tags: [asp.net, c#, coding, performance tuning]
 category: [blog]
 comments: false
-
 ---
 
 In past, I’ve started developing asp.net applications with the default settings of asp.net. Sometimes I found that the application is not responding quickly as it should be. I’ve dig in to this matter and figured out that the entire page is heavily loaded with the hidden page viewstate. Due to this length, the application is taking much long time to load in browser. To overcome this issue, the viewstate needs to be compressed using some kind of the compression.

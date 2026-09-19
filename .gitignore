@@ -39,6 +39,8 @@ Gemfile.lock
 # ============================================================================
 .vscode/
 .idea/
+.continue/
+plans/
 *.sublime-project
 *.sublime-workspace
 
@@ -55,3 +57,5 @@ Gemfile.lock
 .env
 .env.local
 *.log
+AGENTS.md
+CLAUDE.md

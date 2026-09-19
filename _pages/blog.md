@@ -1,9 +1,10 @@
 ---
 title: Blog
-layout: archive
+layout: home
 comments: false
+pagination: 
+  enabled: true
 permalink: /blog/
-entries_layout: list
 header:
   overlay_image: /assets/images/Chicago.jpg
 ---
