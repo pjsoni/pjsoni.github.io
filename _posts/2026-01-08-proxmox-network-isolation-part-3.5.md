@@ -1,11 +1,12 @@
 ---
-
-layout: post
+layout: single
+is_series: true
+series_title: "Proxmox Network Isolation Series"
 title: "Proxmox Network Isolation Series – Part 3.5: Recovering From Broken Quorum Without Losing VMs"
-date: 2026-01-08
-categories: [homelab, proxmox, security, networking, recovery]
+date: 2026-01-09
+category: [blog]
 tags: [Proxmox, Quorum, Corosync, Recovery, VLAN, Migration, Security]
-----------------------------------------------------------------------
+---
 
 ## Introduction
 

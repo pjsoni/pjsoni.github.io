@@ -1,12 +1,11 @@
 ---
-
-layout: post
+layout: single
 slug: zerotrust-iot-homeassistant-firewall
 title: "Zero-Trust IoT & Home Assistant Firewall Architecture"
 date: 2026-01-12
-categories: [networking, security, homelab]
+category: [blog]
 tags: [firewall, iot, homeassistant, zerotrust, dns]
-----------------------------------------------------
+---
 
 ## Overview
 

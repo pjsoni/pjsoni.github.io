@@ -4,8 +4,6 @@ title: Microsoft Releases WebMatrix
 tags: [.net, asp.net, tools, webmatrix]
 category: [blog]
 comments: false
-#JULY 7, 2010 BY PRAVESH SONI
-
 ---
 
 Today Microsoft released beta version of free tool for developing web application called “WebMatrix”. This tool intended for all developers from beginners to experienced. WebMatrix can be downloaded from WebMatrix download page.

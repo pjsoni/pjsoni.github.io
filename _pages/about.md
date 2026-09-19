@@ -1,15 +1,17 @@
 ---
 title: About me
 permalink: /about.html
+layout: splash
+classes: wide
 header:
   overlay_image: /assets/images/Chicago.jpg
 ---
 
-![Pravesh Soni](/assets/images/pravesh.png){:width="180px" style="float:left; margin-right: 1.5em;"}
-
 ## My Journey into Technology
 
-I grew up fascinated by computers specifically those used for early games. My first interaction with the computer when I got chance to play games on Spectravideo SVI-728 at my friend's house. That started my exploration in the early days of personal computing. My first brush with programming came through BASIC—writing simple games and scripts that sparked an enduring passion for building software. What began as childhood curiosity evolved into a 20+ year career in software development.
+![Pravesh Soni](/assets/images/pravesh.png){:width="180px" style="float:left; margin-right: 1.5em;"}
+
+I grew up fascinated by computers specifically those used for early games. My first interaction with the computer when I got chance to play games on Spectravideo SVI-728 at my friend's house. That started my exploration in the early days of personal computing. My first brush with programming came through BASIC—writing simple programs that sparked an enduring passion for building software. What began as childhood curiosity evolved into a 20+ year career in software development.
 
 My early years in the industry introduced me to **Classic ASP**, where I learned web development fundamentals. This foundation led me to **Microsoft technologies**, particularly **.NET and C#**, which became my primary focus. Over the decades, I've deepened my expertise in application architecture, performance optimization, and DevOps practices, working across the full technology stack—from database design to cloud infrastructure.
 
@@ -23,7 +25,7 @@ Beyond code, I'm a fan of science fiction, music, and creative pursuits. I'm an 
 
 For detailed information about my professional background and skills:
 
-- **Resume**: [View Online](/resume.html) | [Download PDF](/assets/docs/resume.pdf)
+- **Resume**: [View Online](/resume.html) [Download PDF](/assets/docs/resume.pdf)
 - **LinkedIn**: [linkedin.com/in/pjsoni](https://www.linkedin.com/in/pjsoni)
 - **GitHub**: [github.com/pjsoni](https://github.com/pjsoni)
 - **Blog**: [Read my latest posts](/blog/)
