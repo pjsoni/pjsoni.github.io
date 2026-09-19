@@ -1,94 +1,3 @@
-# # Minimal, remote-theme-friendly Jekyll configuration
-
-# # Use the remote Minimal Mistakes theme
-# remote_theme: "mmistakes/minimal-mistakes"
-# minimal_mistakes_skin: "air"
-
-# # Basic site settings
-# locale: "en-US"
-# title: "Pravesh Soni"
-# title_separator: "-"
-# subtitle: "My journey in to unknown of IT"
-# name: "Pravesh Soni"
-# url: "https://pravesh.me"
-# baseurl: "" # leave empty for root
-
-# # Files and folders to include/exclude from site build
-# include:
-#   - .htaccess
-#   - _pages
-# exclude:
-#   - vendor
-#   - .bundle
-#   - node_modules
-#   - tmp
-#   - README.md
-#   - AGENTS.md
-#   - CLAUDE.md
-
-# encoding: "utf-8"
-# markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-# # Markdown and conversion
-# markdown: kramdown
-# highlighter: rouge
-
-# # Outputting
-# permalink: /:title.html
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-# timezone: America/Chicago
-
-# # Plugins
-# plugins:
-#   - jekyll-paginate
-#   - jekyll-sitemap
-#   - jekyll-gist
-#   - jekyll-feed
-#   - jekyll-include-cache
-#   - jekyll-archives
-
-# # Archives (jekyll-archives)
-# category_archive:
-#   type: liquid
-#   path: /categories/
-# tag_archive:
-#   type: liquid
-#   path: /tags/
-
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-# # Defaults (pages and posts)
-# defaults:
-#   - scope:
-#       path: ""
-#       type: pages
-#     values:
-#       layout: single
-#       header:
-#         overlay_image: /assets/images/chicago.jpg
-#   - scope:
-#       path: ""
-#       type: posts
-#     values:
-#       layout: single
-#       author_profile: true
-#       read_time: true
-#       comments: true
-#       share: true
-#       related: true
-
-
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
@@ -301,7 +210,7 @@ sass:
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /blog/:title/
 timezone: America/Chicago # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
