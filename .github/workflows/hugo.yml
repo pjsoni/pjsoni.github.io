@@ -36,20 +36,21 @@ jobs:
           hugo-version: '0.166.0'
           extended: true
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
       - name: Install Dart Sass
-        run: npm install --global sass@1.104.1
+        run: |
+          curl -L https://github.com/sass/dart-sass/releases/download/1.104.1/dart-sass-1.104.1-linux-x64.tar.gz \
+            -o /tmp/dart-sass.tar.gz
+
+          sudo tar -xzf /tmp/dart-sass.tar.gz -C /opt
+          sudo ln -sf /opt/dart-sass/sass /usr/local/bin/sass
+
+          sass --embedded --version
 
       - name: Build with Hugo
         run: hugo --minify
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
