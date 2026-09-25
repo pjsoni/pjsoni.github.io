@@ -36,6 +36,11 @@ jobs:
           hugo-version: '0.166.0'
           extended: true
 
+      - name: Setup Dart Sass
+        uses: browser-actions/setup-sass@v2
+        with:
+          version: '1.93.2'
+
       - name: Build with Hugo
         run: hugo --minify
         env:
