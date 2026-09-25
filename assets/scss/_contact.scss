@@ -1,0 +1,55 @@
+.contact-social {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+
+  margin-block-start: var(--mm--spacing--20);
+}
+
+.contact-social__link {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  inline-size: 100%;
+  min-block-size: 40px;
+
+  color: var(--mm--color--contrast);
+
+//   font-size: var(--mm--font-size--medium);
+
+  text-decoration: none;
+
+  border-radius: 0.5rem;
+}
+
+.contact-social__link:hover {
+  color: var(--mm--color--contrast);
+
+  background-color: var(--mm--color--base-2);
+}
+
+.contact-social__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  inline-size: 40px;
+  block-size: 40px;
+
+  flex-shrink: 0;
+}
+
+.contact-social__icon svg {
+  display: block;
+
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+.contact-social__name {
+  line-height: 1.4;
+}
+

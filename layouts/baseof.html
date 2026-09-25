@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {{ if .IsHome }}
+      {{ .Site.Title }}
+    {{ else }}
+      {{ .Title }} · {{ .Site.Title }}
+    {{ end }}
+  </title>
+
+{{ $opts := dict "transpiler" "dartsass" }}
+{{ $styles := resources.Get "scss/site.scss" | css.Sass $opts | minify | fingerprint }}
+
+<link
+  rel="stylesheet"
+  href="{{ $styles.RelPermalink }}"
+  integrity="{{ $styles.Data.Integrity }}"
+>
+
+</head>
+
+<body>
+
+{{ partial "header.html" . }}
+
+<main class="site-content">
+  {{ block "main" . }}{{ end }}
+</main>
+
+  {{ partial "footer.html" . }}
+
+</body>
+</html>

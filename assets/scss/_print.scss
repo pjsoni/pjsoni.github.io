@@ -1,0 +1,40 @@
+@media print {
+
+  .site-header,
+  .site-footer,
+  .site-nav {
+    display: none !important;
+  }
+
+  .site-content {
+    width: 100%;
+  }
+
+  .page__header,
+  .post-content {
+    padding-block: 0;
+  }
+
+  .jumbotron {
+    color: #000;
+    background: none !important;
+  }
+
+  .jumbotron__overlay,
+  .jumbotron__inner {
+    padding: 0;
+  }
+
+  .jumbotron__content {
+    max-inline-size: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .prose {
+    max-inline-size: none;
+  }
+}

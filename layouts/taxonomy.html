@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+{{ partial "jumbotron.html" (dict
+  "page" .
+  "class" "posts-jumbotron"
+) }}
+
+<section class="posts-archive">
+
+  <div class="posts-archive__inner">
+
+    <div class="post-list">
+      <div class="prose">
+
+        {{ range .Pages.ByTitle }}
+          <article>
+            <h2>
+              <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            </h2>
+
+            <p>
+              {{ .Pages.Len }} {{ if eq .Pages.Len 1 }}article{{ else }}articles{{ end }}
+            </p>
+          </article>
+        {{ end }}
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+{{ end }}

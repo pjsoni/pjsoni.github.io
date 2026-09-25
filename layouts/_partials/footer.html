@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="site-footer-inner">
+
+    <p class="site-footer-copyright">
+      © 2008 - {{ now.Year }} {{ .Site.Title }}. {{ .Site.Params.copyrightTerms }}. 
+    </p>
+
+    <nav class="site-footer-nav" aria-label="Footer navigation">
+      {{ range site.Menus.footer }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+
+  </div>
+</footer>

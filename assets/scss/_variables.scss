@@ -1,0 +1,94 @@
+:root {
+  // Typography
+  --mm--font-size-base: 1.0rem;
+  --mm--font-size--x-small: 0.80rem;
+  --mm--font-size--small: 0.90rem;
+  --mm--font-size--medium: 1.1rem;
+
+  --mm--font-size--large: clamp(
+    1.35rem,
+    1.35rem + ((1vw - 0.2rem) * 0.75),
+    1.8rem
+  );
+
+  --mm--font-size--x-large: clamp(
+    1.8rem,
+    1.8rem + ((1vw - 0.2rem) * 1),
+    2.4rem
+  );
+
+  --mm--font-size--xx-large: clamp(
+    2.4rem,
+    2.4rem + ((1vw - 0.2rem) * 1.2),
+    3.2rem
+  );
+
+  --mm--font-family--body:
+    "Inter",
+    sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "avenir next",
+    avenir,
+    "segoe ui",
+    "helvetica neue",
+    helvetica,
+    Cantarell,
+    Ubuntu,
+    roboto,
+    noto,
+    arial,
+    sans-serif;
+
+  --mm--font-family--heading:
+    Cardo,
+    "Iowan Old Style",
+    "Apple Garamond",
+    Baskerville,
+    "Times New Roman",
+    "Droid Serif",
+    Times,
+    "Source Serif Pro",
+    serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol";
+
+  --mm--font-family--monospace: monospace;
+
+
+  // Spacing
+  --mm--spacing--05: .5rem;
+  --mm--spacing--10: 1rem;
+  --mm--spacing--20: min(1.5rem, 2vw);
+  --mm--spacing--30: min(2.5rem, 3vw);
+  --mm--spacing--40: min(4rem, 5vw);
+  --mm--spacing--50: min(6.5rem, 8vw);
+  --mm--spacing--60: min(10.5rem, 13vw);
+
+
+  // Layout
+  --mm--root--padding-inline: var(--mm--spacing--40);
+  --mm--global--content-size: 650px;
+  --mm--global--feature-size: 880px;
+  --mm--global--wide-size: 1280px;
+
+
+  // Misc
+
+  --mm--radius--round: 100000px;
+
+
+  // Colors
+
+  --mm--color--base: #fff;
+  --mm--color--base-2: #f6f6f6;
+
+  --mm--color--contrast: #222;
+  --mm--color--contrast-2: #666;
+  --mm--color--contrast-3: #ddd;
+
+  --mm--color--link: #222;
+  --mm--color--link-contrast-2: #666;
+  --mm--color--link-contrast-3: #ddd;
+}

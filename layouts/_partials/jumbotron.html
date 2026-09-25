@@ -1,0 +1,131 @@
+{{ $page := .page }}
+
+{{ $class := .class | default "" }}
+
+{{ $jumbotron := $page.Params.jumbotron | default dict }}
+{{ $siteJumbotron := site.Params.jumbotron | default dict }}
+
+{{ $image := index $jumbotron "image" | default (index $siteJumbotron "image") }}
+
+{{ $portrait := index $jumbotron "portrait" }}
+
+{{ $content := index $jumbotron "content" }}
+
+{{ $links := index $jumbotron "links" }}
+{{ $categoryLinks := slice }}
+
+{{ with $page.GetTerms "categories" }}
+  {{ range . }}
+    {{ $categoryLinks = $categoryLinks | append (dict
+      "label" .LinkTitle
+      "url" .RelPermalink
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{ $links := index $jumbotron "links" }}
+
+{{ if not $links }}
+  {{ with $page.GetTerms "categories" }}
+    {{ $links = slice }}
+
+    {{ range . }}
+      {{ $links = $links | append (dict
+        "label" .LinkTitle
+        "url" .RelPermalink
+      ) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $showMeta := index $jumbotron "meta" | default false }}
+
+<section
+  class="jumbotron {{ $class }}{{ with $image }} jumbotron--image{{ end }}"
+  {{ with $image }}
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url('{{ . | relURL }}');"
+  {{ end }}
+>
+  <div class="jumbotron__overlay">
+
+    <div class="jumbotron__inner">
+
+      {{ if $portrait }}
+
+        <div class="jumbotron__profile">
+
+          <div class="jumbotron__portrait">
+            {{ with $portrait }}
+              <img
+                src="{{ . | relURL }}"
+                alt="{{ $page.Title }}"
+              >
+            {{ end }}
+          </div>
+
+          <div class="jumbotron__content">
+
+            <h1 class="jumbotron__title">
+              {{ $page.Title }}
+            </h1>
+
+            {{ with $content }}
+              <div class="jumbotron__body">
+                {{ . | markdownify }}
+              </div>
+            {{ end }}
+
+            {{ with $links }}
+              <div class="jumbotron__links">
+                {{ range . }}
+                  <a href="{{ if strings.HasPrefix .url "/" }}{{ .url | relURL }}{{ else }}{{ .url }}{{ end }}">
+                    {{ .label }}
+                  </a>
+                {{ end }}
+              </div>
+            {{ end }}
+
+            {{ if $showMeta }}
+              {{ partial "post-meta.html" $page }}
+            {{ end }}
+
+          </div>
+
+        </div>
+
+      {{ else }}
+
+        <div class="jumbotron__content">
+
+          <h1 class="jumbotron__title">
+            {{ $page.Title }}
+          </h1>
+
+          {{ with $content }}
+            <div class="jumbotron__body">
+              {{ . | markdownify }}
+            </div>
+          {{ end }}
+          {{ if $showMeta }}
+            {{ partial "post-meta.html" $page }}
+          {{ end }}
+          {{ with $links }}
+            <div class="jumbotron__links">
+              {{ range . }}
+                <a href="{{ if strings.HasPrefix .url "/" }}{{ .url | relURL }}{{ else }}{{ .url }}{{ end }}">
+                  {{ .label }}
+                </a>
+              {{ end }}
+            </div>
+          {{ end }}
+
+
+
+        </div>
+
+      {{ end }}
+
+    </div>
+
+  </div>
+</section>

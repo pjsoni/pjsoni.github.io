@@ -1,0 +1,12 @@
+{{- $icon := .Get "icon" -}}
+{{- $content := .Inner | markdownify -}}
+
+<span class="social-link">
+  <span class="social-link__icon">
+    {{ partial "icons/social.html" $icon }}
+  </span>
+
+  <span class="social-link__content">
+    {{- $content -}}
+  </span>
+</span>

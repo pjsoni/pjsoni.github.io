@@ -1,0 +1,24 @@
+{{ with .Params.series }}
+  {{ $seriesName := index . 0 }}
+
+  {{ $seriesPosts := where site.RegularPages "Params.series" "intersect" (slice $seriesName) }}
+  {{ $seriesPosts = sort $seriesPosts "Params.series_order" }}
+
+  <section class="post-series">
+
+    <h2>{{ $seriesName }}</h2>
+
+    <ol>
+      {{ range $seriesPosts }}
+        <li>
+          {{ if eq .RelPermalink $.RelPermalink }}
+            <strong>{{ .LinkTitle }}</strong>
+          {{ else }}
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+          {{ end }}
+        </li>
+      {{ end }}
+    </ol>
+
+  </section>
+{{ end }}

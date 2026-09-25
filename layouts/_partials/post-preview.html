@@ -1,0 +1,17 @@
+<article class="post-preview">
+
+  <h2>
+    <a href="{{ .RelPermalink }}">
+      {{ .Title }}
+    </a>
+  </h2>
+
+  {{ partial "post-meta.html" . }}
+
+  {{ with .Params.summary }}
+    <p>{{ . }}</p>
+  {{ else }}
+    <p>{{ .Summary }}</p>
+  {{ end }}
+
+</article>

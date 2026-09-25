@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+{{ partial "jumbotron.html" (dict
+  "page" .
+  "class" "posts-jumbotron"
+) }}
+
+{{/* ---------------------------------------------------------
+     Post Listing
+     --------------------------------------------------------- */}}
+
+<section class="posts-archive">
+
+  <div class="posts-archive__inner">
+
+    {{ $posts := where site.RegularPages "Section" "posts" }}
+    {{ $posts = sort $posts "Date" "desc" }}
+
+    {{ $paginator := .Paginate $posts }}
+
+    {{ $gridPosts := where $paginator.Pages "Params.archive_layout" "grid" }}
+    {{ $listPosts := where $paginator.Pages "Params.archive_layout" "!=" "grid" }}
+
+    {{ if $gridPosts }}
+      <div class="post-grid">
+        {{ range $gridPosts }}
+          {{ partial "post-card.html" . }}
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ if $listPosts }}
+      <div class="post-list">
+        <div class="prose">
+        {{ range $listPosts }}
+          {{ partial "post-preview.html" . }}
+        {{ end }}
+        </div>
+       
+      </div>
+    {{ end }}
+
+    {{ partial "pagination.html" $paginator }}
+
+  </div>
+
+</section>
+
+{{ end }}

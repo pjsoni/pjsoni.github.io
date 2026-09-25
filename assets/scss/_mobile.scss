@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Mobile
+   ========================================================================== */
+
+@media (max-width: 700px) {
+
+  :root {
+    --mm--root--padding-inline: var(--mm--spacing--20);
+  }
+
+
+  /* ------------------------------------------------------------------------
+     Header
+     ------------------------------------------------------------------------ */
+
+  .site-header-inner {
+    gap: 1rem;
+  }
+
+  .site-nav {
+    gap: 1.25rem;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     Jumbotron
+     ------------------------------------------------------------------------ */
+
+  .jumbotron__inner {
+    padding-block: var(--mm--spacing--40);
+  }
+
+
+  /* ------------------------------------------------------------------------
+     Homepage jumbotron
+     ------------------------------------------------------------------------ */
+
+  .home-jumbotron {
+    min-block-size: 360px;
+  }
+
+  .home-jumbotron__overlay {
+    min-block-size: 360px;
+  }
+
+  .home-jumbotron__profile {
+    grid-template-columns: 1fr;
+
+    gap: var(--mm--spacing--30);
+
+    text-align: center;
+  }
+
+  .home-jumbotron__portrait img {
+    inline-size: 180px;
+    block-size: 180px;
+  }
+
+  .home-jumbotron__content {
+    max-inline-size: none;
+  }
+
+  .home-jumbotron__body p:last-child {
+    justify-content: center;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     Homepage hero
+     ------------------------------------------------------------------------ */
+
+  .home-hero__inner {
+    max-inline-size: var(--mm--global--content-size);
+
+    padding-block: var(--mm--spacing--40);
+  }
+
+  .home-hero__image {
+    order: -1;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     Recent writing
+     ------------------------------------------------------------------------ */
+
+  .home-recent-writing__header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .home-recent-writing__posts--grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-recent-writing__posts--list .post-card {
+    display: block;
+  }
+
+  .home-recent-writing__posts--list .post-card__image {
+    width: 100%;
+
+    margin-block-end: var(--mm--spacing--20);
+  }
+
+
+  /* ------------------------------------------------------------------------
+     About
+     ------------------------------------------------------------------------ */
+
+  .about-content {
+    grid-template-columns: 1fr;
+
+    gap: var(--mm--spacing--30);
+  }
+
+  .about-content__image img {
+    width: 180px;
+    height: 180px;
+  }
+
+
+  /* ------------------------------------------------------------------------
+     Post
+     ------------------------------------------------------------------------ */
+
+  .post-content {
+    padding-block: var(--mm--spacing--30);
+  }
+
+
+  /* ------------------------------------------------------------------------
+     Footer
+     ------------------------------------------------------------------------ */
+
+  .site-footer-inner {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .site-footer-nav {
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .post-navigation {
+    grid-template-columns: 1fr;
+    gap: var(--mm--spacing--10);
+  }
+
+  .post-navigation__link {
+    min-block-size: auto;
+  }
+
+  .post-navigation__link--next {
+    text-align: left;
+  }
+
+}

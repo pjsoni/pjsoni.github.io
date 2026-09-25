@@ -1,0 +1,16 @@
+.page {
+  width: 100%;
+}
+
+.page__content {
+  width: 100%;
+
+  padding-block: var(--mm--spacing--40);
+}
+
+.page__prose {
+  width: 100%;
+  max-inline-size: var(--mm--global--feature-size);
+
+  margin-inline: auto;
+}

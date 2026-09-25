@@ -1,0 +1,31 @@
+{{- $icon := .Get "icon" -}}
+{{- $layout := .Get "layout" | default "inline" -}}
+{{- $size := .Get "size" | default "normal" -}}
+{{- $border := .Get "border" | default "false" -}}
+
+{{- if not (in (slice "inline" "block") $layout) -}}
+  {{- $layout = "inline" -}}
+{{- end -}}
+
+{{- if not (in (slice "normal" "medium" "large") $size) -}}
+  {{- $size = "normal" -}}
+{{- end -}}
+
+{{- if not (in (slice "true" "false") $border) -}}
+  {{- $border = "false" -}}
+{{- end -}}
+
+{{- $iconPath := printf "icons/%s.svg" $icon -}}
+{{- $iconResource := resources.Get $iconPath -}}
+
+<span class="icon-link icon-link--{{ $layout }}{{ if ne $size "normal" }} icon-link--{{ $size }}{{ end }}{{ if eq $border "true" }} icon-link--border{{ end }}">
+  <span class="icon-link__icon">
+    {{ with $iconResource }}
+      {{ .Content | safeHTML }}
+    {{ end }}
+  </span>
+
+  <span class="icon-link__content">
+    {{ .Inner | markdownify }}
+  </span>
+</span>

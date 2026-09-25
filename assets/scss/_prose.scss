@@ -1,0 +1,193 @@
+.prose {
+  max-inline-size: 650px;
+  margin-inline: auto;
+
+  color: var(--mm--color--contrast);
+  line-height: 1.7;
+}
+
+
+/* Links */
+
+.prose a {
+  color: var(--mm--color--link);
+}
+
+/* Paragraphs */
+
+.prose p {
+  margin-block: 0 1.25em;
+}
+
+.prose p:last-child {
+  margin-block-end: 0;
+}
+
+.prose .external-link a::after {
+  content: "↗";
+  display: inline-block;
+  margin-inline-start: 0.2em;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: super;
+}
+
+/* Headings */
+
+.prose h2 {
+  margin-block: 1.25em 0.75em;
+}
+
+.prose h3 {
+  margin-block: 1em 0.65em;
+}
+
+.prose h4 {
+  margin-block: .75em 0.5em;
+}
+
+.prose > :is(h2, h3, h4):first-child {
+  margin-block-start: 0;
+}
+
+
+/* Lists */
+
+.prose ul,
+.prose ol {
+  margin-block: 0 1.4em;
+  padding-inline-start: 1.5em;
+}
+
+.prose li {
+  margin-block: 0.35em;
+  padding-inline-start: 0.2em;
+}
+
+.prose li > ul,
+.prose li > ol {
+  margin-block: 0.4em 0;
+}
+
+
+/* Inline code */
+
+.prose :not(pre) > code {
+  padding-block: 0.15em;
+  padding-inline: 0.35em;
+
+  background-color: var(--mm--color--base-2);
+  border-radius: 0.25rem;
+}
+
+
+/* Code blocks */
+
+.prose pre {
+  margin-block: 1.75em;
+  padding: 1.25em;
+
+  overflow-x: auto;
+  border-radius: 0.4rem;
+}
+
+
+/* Images */
+
+.prose img {
+  display: block;
+
+  max-inline-size: 100%;
+  block-size: auto;
+
+  margin-block: 1.75em;
+  margin-inline: auto;
+}
+
+
+/* Floating images */
+
+.prose img.align-left {
+  float: left;
+  margin-block: 0 var(--mm--spacing--20);
+  margin-inline: 0 var(--mm--spacing--20);
+}
+
+.prose img.align-right {
+  float: right;
+  margin-block: 0 var(--mm--spacing--20);
+  margin-inline: var(--mm--spacing--20) 0;
+}
+
+.prose img.align-center {
+  margin-inline: auto;
+}
+
+
+/* Figures */
+
+.prose figure {
+  margin-block: 1.75em;
+  margin-inline: 0;
+}
+
+.prose figcaption {
+  margin-block-start: 0.6em;
+
+  color: var(--mm--color--contrast-2);
+  text-align: center;
+}
+
+
+/* Tables */
+
+.prose table {
+  display: block;
+
+  width: 100%;
+  margin-block: 1.75em;
+
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.prose th,
+.prose td {
+  padding-block: 0.65em;
+  padding-inline: 0.8em;
+
+  text-align: left;
+  vertical-align: top;
+
+  border-block-end: 1px solid var(--mm--color--contrast-3);
+}
+
+.prose .social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.prose .social-link__icon {
+  display: inline-flex;
+  inline-size: 1em;
+  block-size: 1em;
+}
+
+.prose .social-link__icon svg {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.prose .image-align-left img {
+  float: left;
+  margin-block: 0 var(--mm--spacing--30);
+  margin-inline: 0 var(--mm--spacing--30);
+}
+
+.prose .image-align-right img {
+  float: right;
+  margin-block: 0 var(--mm--spacing--30);
+  margin-inline: 0 var(--mm--spacing--30);
+}

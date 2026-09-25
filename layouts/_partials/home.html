@@ -1,0 +1,107 @@
+{{/* ---------------------------------------------------------
+     Homepage
+     --------------------------------------------------------- */}}
+
+{{ $posts := where site.RegularPages "Section" "posts" }}
+
+{{ $hero := false }}
+
+{{ with .Params.heroPost }}
+  {{ $hero = site.GetPage . }}
+{{ end }}
+
+{{ if not $hero }}
+  {{ $hero = index (sort $posts "Date" "desc") 0 }}
+{{ end }}
+
+
+{{/* ---------------------------------------------------------
+     Jumbotron
+     --------------------------------------------------------- */}}
+
+{{ partial "jumbotron.html" (dict
+  "page" .
+  "class" "home-jumbotron"
+) }}
+
+
+{{/* ---------------------------------------------------------
+     Homepage Content
+     --------------------------------------------------------- */}}
+
+{{ with .Content }}
+
+<section class="home-intro">
+
+  <div class="home-intro__inner">
+
+    <div class="prose">
+      {{ . }}
+    </div>
+
+  </div>
+
+</section>
+
+{{ end }}
+
+
+{{/* ---------------------------------------------------------
+     Hero Content
+     --------------------------------------------------------- */}}
+
+{{ with $hero }}
+
+<section class="hero">
+
+  <div class="hero__inner">
+
+    <article class="hero__content">
+
+      <p class="hero__label">Featured</p>
+
+      {{ partial "post-meta.html" . }}
+
+      <h2 class="hero__title">
+        <a href="{{ .RelPermalink }}">
+          {{ .Title }}
+        </a>
+      </h2>
+
+      {{ with .Params.excerpt }}
+        <p class="hero__excerpt">{{ . }}</p>
+      {{ else }}
+        <p class="hero__excerpt">{{ .Summary }}</p>
+      {{ end }}
+
+      <a class="hero__link" href="{{ .RelPermalink }}">
+        Read article →
+      </a>
+
+    </article>
+
+    {{ with .Params.image }}
+      <a
+        class="hero__image"
+        href="{{ $hero.RelPermalink }}"
+        aria-label="Read {{ $hero.Title }}"
+      >
+        <img
+          src="{{ . | relURL }}"
+          alt=""
+        >
+      </a>
+    {{ end }}
+
+  </div>
+
+</section>
+
+{{ end }}
+
+
+{{/* ---------------------------------------------------------
+     Recent Writing
+     --------------------------------------------------------- */}}
+
+{{ partial "home-recent-writing.html" . }}

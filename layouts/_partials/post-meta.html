@@ -1,0 +1,7 @@
+<div class="post-meta">
+  <span>{{ .Date.Format "January 2, 2006" }}</span>
+  <span class="post-meta-separator">~</span>
+  <span>
+    Read in {{ .ReadingTime }} min{{ if ne .ReadingTime 1 }}s{{ end }}
+  </span>
+</div>

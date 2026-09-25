@@ -1,0 +1,28 @@
+.home-recent-writing {
+  width: 100%;
+  margin-block: 1em 2em;
+}
+
+// .home-recent-writing .prose {
+//   max-inline-size: var(--mm--global--feature-size);
+//   margin-block: 2em 2em;
+// }
+
+.home-recent-writing__inner {
+  width: 100%;
+  max-inline-size: var(--mm--global--feature-size);
+
+  margin-inline: auto;
+
+  // padding-block: var(--mm--spacing--30);
+  // padding-inline: var(--mm--root--padding-inline);
+}
+
+.home-recent-writing__footer {
+  margin-block: 2em 2em;
+  font-size: var(--mm--font-size--large);
+}
+
+.home-recent-writing__footer::after {
+  content: "→";
+}

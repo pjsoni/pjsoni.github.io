@@ -1,0 +1,20 @@
+<article class="post-card">
+  {{ with .Params.image }}
+    <a
+      class="post-card__image"
+      href="{{ $.RelPermalink }}"
+      aria-label="Read {{ $.Title }}"
+    >
+      <img
+        src="{{ . | relURL }}"
+        alt=""
+        loading="lazy"
+      >
+    </a>
+  {{ end }}
+  <div class="post-card__body">
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+  </div>
+</article>

@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<article class="post">
+
+  {{ partial "jumbotron.html" (dict
+    "page" .
+    "class" "post__jumbotron"
+  ) }}
+
+  <div class="post-content">
+    <div class="prose">
+      {{ .Content }}
+      {{ partial "post-tags.html" . }}
+      {{ partial "post-series.html" . }}
+      {{ partial "related-posts.html" . }}
+      {{ partial "post-navigation.html" . }}
+    </div>
+  </div>
+</article>
+
+{{ end }}

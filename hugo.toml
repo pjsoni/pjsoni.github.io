@@ -1,0 +1,113 @@
+baseURL = "https://pravesh.me/"
+title = "Pravesh Soni"
+copyrightTerms = "All Rights Reserved."
+
+defaultContentLanguage = "en"
+enableEmoji = true
+timeZone = "America/Chicago"
+
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  posts = "/posts/:slug"
+
+[frontmatter]
+  date = ["date"]
+  expiryDate = ["expirydate"]
+  lastmod = [":git", "lastmod", "publishdate", "date"]
+  publishDate = ["publishdate", "date"]
+
+[params]
+  description = "My journey into the unknown of IT"
+  ghrepo = "https://github.com/pjsoni/pjsoni.github.io/"
+  copyrightTerms = "All rights reserved"
+  [params.jumbotron]
+    image = "/assets/images/Chicago.jpg"
+
+[related]
+  includeNewer = true
+  threshold = 20
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "categories"
+    weight = 50
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[server]
+  [[server.headers]]
+    for = "/**"
+
+    [server.headers.values]
+      X-Content-Type-Options = "nosniff"
+      X-Frame-Options = "DENY"
+      Referrer-Policy = "no-referrer"
+
+[menus]
+
+  [[menus.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 10
+
+  [[menus.main]]
+    identifier = "writing"
+    name = "Writing"
+    pageRef = "/posts/"
+    weight = 20
+
+  [[menus.main]]
+    identifier = "contact"
+    name = "Contact"
+    pageRef = "/contact"
+    weight = 30
+
+  [[menus.footer]]
+    identifier = "uses"
+    name = "Uses"
+    pageRef = "/uses"
+    weight = 20
+
+  [[menus.footer]]
+    identifier = "thanks"
+    name = "Thanks"
+    pageRef = "/thanks"
+    weight = 30
+
+  [[menus.footer]]
+    identifier = "feeds"
+    name = "Feeds"
+    pageRef = "/feed"
+    weight = 40
+
+  [[menus.footer]]
+    identifier = "terms"
+    name = "Terms & Privacy"
+    pageRef = "/terms"
+    weight = 50
+
+[markup]
+
+  [markup.goldmark]
+
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+
+[outputFormats.print]
+  name = "print"
+  mediaType = "text/html"
+  baseName = "print"
+  isHTML = true
+  permalinkable = true
+  rel = "alternate"

@@ -1,0 +1,157 @@
+@media (max-width: 700px) {
+
+  :root {
+    --mm--root--padding-inline: var(--mm--spacing--20);
+  }
+
+
+  // Header
+
+  .site-header-inner {
+    gap: 1rem;
+  }
+
+  .site-nav {
+    gap: 1.25rem;
+  }
+
+
+  // Jumbotron
+
+  .jumbotron__inner {
+    padding-block: var(--mm--spacing--40);
+  }
+
+  .jumbotron__profile {
+    grid-template-columns: 1fr;
+
+    gap: var(--mm--spacing--30);
+
+    text-align: center;
+  }
+
+  .jumbotron__portrait img {
+    inline-size: 180px;
+    block-size: 180px;
+  }
+
+
+  // Home
+
+  .home-jumbotron {
+    min-block-size: 360px;
+  }
+
+  .home-jumbotron__overlay {
+    min-block-size: 360px;
+  }
+
+  .home-hero__inner {
+    max-inline-size: var(--mm--global--content-size);
+
+    padding-block: var(--mm--spacing--40);
+  }
+
+  .home-hero__image {
+    order: -1;
+  }
+
+  .home-recent-writing__header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home-recent-writing__posts--grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-recent-writing__posts--list .post-card {
+    display: block;
+  }
+
+  .home-recent-writing__posts--list .post-card__image {
+    width: 100%;
+
+    margin-block-end: var(--mm--spacing--20);
+  }
+
+
+  // Pages
+
+  .about-content {
+    grid-template-columns: 1fr;
+
+    gap: var(--mm--spacing--30);
+  }
+
+  .about-content__image img {
+    width: 180px;
+    height: 180px;
+  }
+
+
+  // Posts
+
+  .post-content {
+    padding-block: var(--mm--spacing--30);
+  }
+
+//   .prose {
+//     line-height: 1.65;
+//   }
+
+  .prose h2 {
+    margin-block-start: 2em;
+
+    // font-size: var(--mm--font-size--large);
+  }
+
+  .prose h3 {
+    margin-block-start: 1.75em;
+
+    // font-size: var(--mm--font-size--medium);
+  }
+
+
+  // Code
+
+  .prose pre {
+    margin-inline: calc(var(--mm--root--padding-inline) * -1);
+
+    padding-inline: var(--mm--root--padding-inline);
+
+    border-radius: 0;
+  }
+
+
+  // Navigation
+
+  .post-navigation {
+    grid-template-columns: 1fr;
+
+    gap: var(--mm--spacing--10);
+  }
+
+  .post-navigation__link {
+    min-block-size: auto;
+  }
+
+  .post-navigation__link--next {
+    text-align: left;
+  }
+
+
+  // Footer
+
+  .site-footer-inner {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .site-footer-nav {
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+}

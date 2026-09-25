@@ -1,0 +1,138 @@
+.jumbotron {
+  width: 100%;
+
+  color: #fff;
+  background-color: var(--mm--color--contrast);
+  padding-block: var(--mm--spacing--10);
+  margin-block-end: var(--mm--spacing--40);
+}
+
+.jumbotron__overlay {
+  width: 100%;
+}
+
+.jumbotron__inner {
+  width: 100%;
+  max-inline-size: var(--mm--global--wide-size);
+
+  margin-inline: auto;
+
+  padding-block: var(--mm--spacing--40);
+  padding-inline: var(--mm--root--padding-inline);
+}
+
+.jumbotron__content {
+  width: 100%;
+  max-inline-size: var(--mm--global--feature-size);
+
+  margin-inline: auto;
+}
+
+.jumbotron__title {
+  margin: 0;
+
+  color: inherit;
+
+  // font-size: var(--mm--font-size--xx-large);
+  line-height: 1.2;
+}
+
+.jumbotron__body {
+  margin-block-start: var(--mm--spacing--20);
+}
+
+.jumbotron__body p {
+  // font-size: var(--mm--font-size--medium);
+  line-height: 1.6;
+}
+
+.jumbotron--image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.jumbotron__profile {
+  display: grid;
+
+  grid-template-columns: 280px minmax(0, 650px);
+
+  gap: var(--mm--spacing--40);
+
+  align-items: center;
+}
+
+.jumbotron__portrait img {
+  display: block;
+
+  inline-size: 240px;
+  block-size: 240px;
+
+  margin-inline: auto;
+
+  object-fit: cover;
+
+  border-radius: var(--mm--radius--round);
+}
+
+.jumbotron__links {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-block-start: var(--mm--spacing--20);
+}
+
+.jumbotron__links a {
+  display: inline-block;
+
+  padding-block: 8px;
+  padding-inline: 14px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  background-color: rgba(255, 255, 255, 0.15);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 0.25rem;
+}
+
+.jumbotron__links a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* Home */
+
+.home-jumbotron {
+  background-color: var(--mm--color--contrast);
+}
+
+.home-jumbotron .jumbotron__inner {
+  padding-block: var(--mm--spacing--50);
+}
+
+
+// /* Pages */
+
+// .page__jumbotron {
+//   background-color: var(--mm--color--contrast);
+// }
+
+// .page__jumbotron .jumbotron__inner {
+//   padding-block: var(--mm--spacing--50);
+// }
+
+
+// /* Articles */
+
+// .article__jumbotron {
+//   background-color: var(--mm--color--contrast);
+// }
+
+// .article__jumbotron .jumbotron__title {
+//   font-size: var(--mm--font-size--x-large);
+// }

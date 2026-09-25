@@ -1,0 +1,28 @@
+<article class="post-card">
+  {{ with .Params.image }}
+    <a
+      class="post-card__image"
+      href="{{ $.RelPermalink }}"
+      aria-label="Read {{ $.Title }}"
+    >
+      <img
+        src="{{ . | relURL }}"
+        alt=""
+        loading="lazy"
+      >
+    </a>
+  {{ end }}
+  <div class="post-card__body">
+    <h3 class="post-card__title">
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </h3>
+    {{ partial "post-meta.html" . }}
+    {{ with .Params.excerpt }}
+      <p class="post-card__excerpt">{{ . }}</p>
+    {{ else }}
+      <p class="post-card__excerpt">{{ .Summary }}</p>
+    {{ end }}
+  </div>
+</article>

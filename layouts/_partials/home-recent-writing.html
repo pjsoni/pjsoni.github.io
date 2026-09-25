@@ -1,0 +1,34 @@
+{{/* ---------------------------------------------------------
+     Recent Writing
+     --------------------------------------------------------- */}}
+
+{{ $count := .Params.recentWriting.count | default 6 }}
+{{ $layout := .Params.recentWriting.layout | default "grid" }}
+
+{{ $posts := where site.RegularPages "Section" "posts" }}
+{{ $posts = sort $posts "Date" "desc" }}
+{{ $posts = first $count $posts }}
+
+<section class="home-recent-writing">
+  <div class="prose">
+  <div class="home-recent-writing__inner">
+    <header class="home-recent-writing__header">
+      <h2 class="home-recent-writing__title">Recent Writing</h2>
+    </header>
+    <div class="home-recent-writing__posts home-recent-writing__posts--{{ $layout }}">
+      {{ range $posts }}
+        {{ partial "post-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+      <div class="home-recent-writing__footer">
+      <a
+        class="home-recent-writing__archive"
+        href="{{ "posts/" | relURL }}"
+      >
+        View all writing
+      </a>
+    </div>
+</div>
+
+</section>

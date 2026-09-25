@@ -1,0 +1,15 @@
+<style>
+  :root {
+    --mm--footer--background:
+      {{ index site.Params.footer.colors site.Params.footer.color "background" | safeCSS }};
+
+    --mm--footer--text:
+      {{ index site.Params.footer.colors site.Params.footer.color "text" | safeCSS }};
+
+    --mm--footer--link:
+      {{ index site.Params.footer.colors site.Params.footer.color "link" | safeCSS }};
+
+    --mm--footer--link-hover:
+      {{ index site.Params.footer.colors site.Params.footer.color "linkHover" | safeCSS }};
+  }
+</style>

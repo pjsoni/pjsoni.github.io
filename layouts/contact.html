@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<article class="page">
+  {{ partial "jumbotron.html" (dict
+    "page" .
+    "class" "page__jumbotron"
+  ) }}
+  <div class="page__content">
+    <div class="page__prose">
+       <div class="prose">
+        {{ .Content }}
+       </div>
+      
+    </div>
+  </div>
+
+</article>
+
+{{ end }}
