@@ -5,6 +5,7 @@ copyrightTerms = "All Rights Reserved."
 defaultContentLanguage = "en"
 enableEmoji = true
 timeZone = "America/Chicago"
+enableRobotsTXT = true
 
 [pagination]
   pagerSize = 10
@@ -104,6 +105,12 @@ timeZone = "America/Chicago"
       attribute = true
       autoHeadingID = true
 
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']
+  taxonomy = ['html']
+  term = ['html']
+  
 [outputFormats.print]
   name = "print"
   mediaType = "text/html"

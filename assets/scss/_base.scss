@@ -92,3 +92,19 @@ a:hover {
 .site-content {
   width: 100%;
 }
+blockquote {
+    margin-block: 2em;
+    margin-inline-end: 1em;
+    padding-inline: 1em;
+    font-style: italic;
+    border-inline-start: 0.25em solid var(--mm--color--contrast);
+}
+
+:not(pre)>code {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 0.8em;
+    background: var(--mm--color--contrast-2);
+    border-radius: 4px;
+}
+
