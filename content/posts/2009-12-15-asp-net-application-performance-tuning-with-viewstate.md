@@ -13,7 +13,7 @@ tags:
 In past, I’ve started developing asp.net applications with the default settings of asp.net. Sometimes I found that the application is not responding quickly as it should be. I’ve dig in to this matter and figured out that the entire page is heavily loaded with the hidden page viewstate. Due to this length, the application is taking much long time to load in browser. To overcome this issue, the viewstate needs to be compressed using some kind of the compression.
 
 
-![ASP.net application viewstate size after compression](/images/Viewstate1.png)
+![ASP.net application viewstate size after compression](/assets/images/Viewstate1.png)
 
 
 Below is the methods which I’ve used in my application for compressing the viewstate data.
@@ -129,7 +129,7 @@ protected override void OnInit(EventArgs e)
 I’ve used Sharp ZipLib for the compression and found the interesting results. On an average I found that the entire viewstate is compressed nearly up to 30% of the original viewstate size.
 
 
-![ASP.net application viewstate size after compression](/images/viewstate2.png)
+![ASP.net application viewstate size after compression](/assets/assets/images/viewstate2.png)
 
 Below is a small piece of code which is showing the viewstate data size.
 

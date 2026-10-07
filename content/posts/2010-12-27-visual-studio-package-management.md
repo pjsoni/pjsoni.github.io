@@ -5,7 +5,7 @@ slug: visual-studio-and-package-management
 summary: "An introduction to NuGet, then known as NuPack, and how package management can simplify the process of adding third-party libraries to .NET applications. Using ELMAH as an example, the post illustrates the manual steps developers previously had to perform and how package management streamlines them."
 ---
 
-{{< image-align-right >}}![NuGet](/images/nuget.png){{</ image-align-right >}} All of you have used the latest and greatest open source software in your .net based applications. And you already know that it is hard to figure out the best choice, get it, set it up, run it and update it.
+{{< image-align-right >}}![NuGet](/assets/images/nuget.png){{</ image-align-right >}} All of you have used the latest and greatest open source software in your .net based applications. And you already know that it is hard to figure out the best choice, get it, set it up, run it and update it.
 
 Recently I came across the Visual Studio 2010 extension called NuGet (formerly NuPack) which is a package management for the projects. NuGet is a free, open source developer focused package management system for the .NET platform intent on simplifying the process of incorporating third party libraries into a .NET application during development.
 

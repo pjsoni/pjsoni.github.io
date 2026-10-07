@@ -15,20 +15,20 @@ First of all, we need to create a user account for uTorrent service account usin
 
 Open server dashboard and navigate to **Users** tab. Invoke **Add a User Account** wizard by clicking **Add a user account** link in **Users Tasks** pane.
 
-![WHS Vail - Dashboard](/images/DashboardView.png)
+![WHS Vail - Dashboard](/assets/images/DashboardView.png)
 
 
 
 Once the wizard opens, fill the appropriate information in the first step and proceed to next by clicking on **Next** button.
 
-![WHS Vail - Create user wizard 1](/images/CreateUser1.png)
+![WHS Vail - Create user wizard 1](/assets/images/CreateUser1.png)
 
 
 
 In second step, don’t assign any permissions to any shared folder to the user account.
 
 
-![WHS Vail - Create user wizard 2](/images/CreateUser2.png)
+![WHS Vail - Create user wizard 2](/assets/images/CreateUser2.png)
 
 
 
@@ -36,24 +36,24 @@ Also do not allow remote access and finish the wizard by clicking **Create accou
 
 
 
-![WHS Vail - Create user wizard 3](/images/CreateUser3.png)
+![WHS Vail - Create user wizard 3](/assets/images/CreateUser3.png)
 
 
 ### Create Shared folder
 
 in next step, we need to create a shared folder for uTorrent download data. To do so, invoke **Add a Folder** wizard using the task pane in **Server Folders**.
 
-![WHS Vail – Create shared folder wizard 1](/images/CreateFolder1.png)
+![WHS Vail – Create shared folder wizard 1](/assets/images/CreateFolder1.png)
 
 
 In first step of wizard, give share name and description and proceed to next step by clicking **Next** button.
 
-![WHS Vail – Create shared folder wizard 2](/images/CreateFolder2.png)
+![WHS Vail – Create shared folder wizard 2](/assets/images/CreateFolder2.png)
 
 
 In second step, click on **Specific people** to assign permissions to our uTorrent service account.
 
-![WHS Vail – Create shared folder wizard 3](/images/CreateFolder3.png)
+![WHS Vail – Create shared folder wizard 3](/assets/images/CreateFolder3.png)
 
 
 Assign permission as per above screen shot and finish the wizard by clicking **Add folder** button to complete the folder creation process.
@@ -70,7 +70,7 @@ To create windows service, login to Vail console using Remote Desktop Connection
 sc create uTorrent binPath= “C:Program Files (x86)uTorrentsrvany.exe” displayName= “uTorrent”
 ```
 
-![WHS Vail – Create windows service](/images/CreateService.png)
+![WHS Vail – Create windows service](/assets/images/CreateService.png)
 
 **NOTE:** Please note that there is a space after equal sign.
 {: .notice--info}
@@ -93,7 +93,7 @@ Now click the Start button and open Services console from **Administrative Tools
 
 Select the Log On tab. Click the This account button and enter WHS as the This account and enter the Password you setup earlier for this user account and confirm the Password.
 
-![uTorrent - Service account properties](/images/ServiceAccountProperties.png)
+![uTorrent - Service account properties](/assets/images/ServiceAccountProperties.png)
 
 
 OK out and close the Services dialog.
