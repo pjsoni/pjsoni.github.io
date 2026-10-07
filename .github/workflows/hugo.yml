@@ -28,10 +28,10 @@ jobs:
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages
+        uses: actions/configure-pages@v5
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: '0.166.0'
           extended: true
@@ -52,7 +52,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
@@ -67,4 +67,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages
+        uses: actions/deploy-pages@v4
