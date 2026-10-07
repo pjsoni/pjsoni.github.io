@@ -7,7 +7,7 @@ summary: "An update to the AllTuts theme for BlogEngine.NET, covering the change
 
 Previously I’ve published BlogEngine theme AllTuts based on original Wordpress theme. This theme is now updated for BlogEngine v2.6
 
-![ALlTuts](/assets/images/AllTutsFrontPage.png "ALlTuts")
+![ALlTuts](/images/AllTutsFrontPage.png "ALlTuts")
 
 Download: AllTuts 2.5.0.3 (Updated CSS – 2012/08/02)
 

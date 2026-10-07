@@ -1,7 +1,7 @@
 ---
 title: Resume
 jumbotron:
-  image: "/assets/images/Chicago.jpg"
+  image: "/images/Chicago.jpg"
 print: true
 outputs:
   - html

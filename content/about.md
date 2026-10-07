@@ -2,8 +2,8 @@
 layout: page
 title: About me
 jumbotron:
-  image: "/assets/images/Chicago.jpg"
-  portrait: "/assets/images/pravesh.png"
+  image: "/images/Chicago.jpg"
+  portrait: "/images/pravesh.png"
 ---
 
 ## My Journey into Technology

@@ -1,7 +1,7 @@
 ---
 title: Thanks
 jumbotron:
-  image: "/assets/images/Chicago.jpg"
+  image: "/images/Chicago.jpg"
 ---
 
 I create and maintain the tutorials, articles, open-source projects, and other content published on this website in my spare time.

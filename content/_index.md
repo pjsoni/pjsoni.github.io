@@ -2,7 +2,7 @@
 title: "Hi, I’m Pravesh"
 
 jumbotron:
-  portrait: "/assets/images/pravesh.png"
+  portrait: "/images/pravesh.png"
   content: |
     I’m an IT professional with 20+ years of experience in application development, DevOps, and infrastructure management.
 
